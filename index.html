@@ -1,1 +1,213 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deffar Miloud | Artiste Peintre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
+        radial-gradient(circle at center, #4b3828, #111 70%);
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #d6b36a;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #d6b36a;
+      color: #111;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 45px;
+      color: #d6b36a;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.9;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .painting {
+      background: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .painting:hover {
+      transform: translateY(-8px);
+    }
+
+    .painting img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .painting h3 {
+      padding: 18px;
+      text-align: center;
+      color: #eee;
+    }
+
+    .contact {
+      text-align: center;
+      background: #181818;
+    }
+
+    .contact p {
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    .contact a {
+      color: #d6b36a;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0a0a0a;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>DEFFAR MILOUD</h1>
+      <p>Artiste Peintre</p>
+      <a href="#galerie" class="btn">Découvrir mes œuvres</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>À propos de l'artiste</h2>
+
+    <div class="about">
+      <p>
+        Bienvenue sur le site officiel de Deffar Miloud,
+        artiste peintre passionné par l'art et la création.
+      </p>
+
+      <p>
+        Découvrez ici une sélection de mes œuvres,
+        peintures et créations artistiques.
+      </p>
+    </div>
+  </section>
+
+  <section id="galerie">
+    <h2>Mes œuvres</h2>
+
+    <div class="gallery">
+
+      <div class="painting">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="Œuvre artistique">
+        <h3>Œuvre 01</h3>
+      </div>
+
+      <div class="painting">
+        <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=800&q=80" alt="Œuvre artistique">
+        <h3>Œuvre 02</h3>
+      </div>
+
+      <div class="painting">
+        <img src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=800&q=80" alt="Œuvre artistique">
+        <h3>Œuvre 03</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+
+    <p>Pour toute commande ou information :</p>
+
+    <p>
+      📞 <a href="tel:0773333557">0773 333 557</a>
+    </p>
+
+    <p>
+      🎨 Deffar Miloud — Artiste Peintre
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Deffar Miloud — Tous droits réservés
+  </footer>
+
+</body>
+</html>
